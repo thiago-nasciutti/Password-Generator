@@ -2,12 +2,20 @@
 
 //Prompts
 function prompts(){
-  var lowerCase=prompt("Do you want to use lowercase characters? (yes or no)");
-  var upperCase=prompt("Do you want to use lowercase characters? (yes or no)");
-  var numbers=prompt("Do you want to use numbers? (yes or no)");
-  var symbols=prompt("Do you want to use symbols? (yes or no)");
   var lenght=prompt("How many characters do you want?");
+  var lowerCase=confirm("Do you want to use lowercase characters?");
+  var upperCase=confirm("Do you want to use lowercase characters?");
+  var numbers=confirm("Do you want to use numbers?");
+  var symbols=confrim("Do you want to use symbols?");
 }
+
+//Characters
+ var lowerCase="abcdefghijklmnopqrstuvwxyz";
+ var upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ var numbers="0123456789";
+ var symbols="`~!@#$%^&*()-_=+{[}];:'<,.>?";
+
+ 
 
 
 
