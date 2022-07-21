@@ -2,21 +2,18 @@
 
 //Prompts
 function prompts(){
-  var lenght=prompt("How many characters do you want?");
-  var lowerCase=confirm("Do you want to use lowercase characters?");
-  var upperCase=confirm("Do you want to use lowercase characters?");
-  var numbers=confirm("Do you want to use numbers?");
-  var symbols=confrim("Do you want to use symbols?");
+  var length=prompt("How many characters do you want?");
+  var lowerCase_use=confirm("Do you want to use lowercase characters?");
+  var upperCase_use=confirm("Do you want to use lowercase characters?");
+  var numbers_use=confirm("Do you want to use numbers?");
+  var symbols_use=confrim("Do you want to use symbols?");
 }
 
-//Characters
- var lowerCase="abcdefghijklmnopqrstuvwxyz";
- var upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- var numbers="0123456789";
- var symbols="`~!@#$%^&*()-_=+{[}];:'<,.>?";
-
- 
-
+//Arrays
+ var lowerCase_array=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+ var upperCase_array=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+ var numbers_array=["0","1","2","3","4","5","6","7","8","9"];
+ var symbols_array=["`","~","!","@","#","$","%","^","&","*","()","-","_","=","+","{","[","}",";",":","'","]","<",",",".",">","?"];
 
 
 
