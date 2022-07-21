@@ -14,7 +14,7 @@ function specs(){
   var upperCase_array=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
   var numbers_array=["0","1","2","3","4","5","6","7","8","9"];
   var symbols_array=["`","~","!","@","#","$","%","^","&","*","()","-","_","=","+","{","[","}",";",":","'","]","<",",",".",">","?"];
-
+  
 
 
   //Creating random specs arrays
@@ -46,33 +46,18 @@ function specs(){
   }
   console.log(random_symbols_array);  
 
+//Merge arrays
 
+var arrays_merge = random_lowerCase_array .concat (random_upperCase_array, random_numbers_array, random_symbols_array);
 
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
+console.log(arrays_merge);
 
 // //Conditionals
+
 // if(lowerCase_use && upperCase_use && numbers_use && symbols_use){
 
-// //for (i=0; i<=password_length; i++){
 
   
-// }
-
 // }
 
 // else if(lowerCase_use==true && upperCase_use==true && numbers_use==true){
@@ -129,6 +114,24 @@ function specs(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
