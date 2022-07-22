@@ -2,11 +2,11 @@
 
 //Prompts
 function specs(){
-  var password_length=prompt("How many characters do you want?");
-  var lowerCase_use=confirm("Do you want to use lowercase characters?");
-  var upperCase_use=confirm("Do you want to use uppercase characters?");
-  var numbers_use=confirm("Do you want to use numbers?");
-  var symbols_use=confirm("Do you want to use symbols?");
+  var passwordLength=prompt("How many characters do you want?");
+  var useLower=confirm("Do you want to use lowercase characters?");
+  var useUpper=confirm("Do you want to use uppercase characters?");
+  var useNumbers=confirm("Do you want to use numbers?");
+  var useSymbols=confirm("Do you want to use symbols?");
  
 
   //Specs arrays
@@ -16,167 +16,158 @@ function specs(){
   var symbols=["`","~","!","@","#","$","%","^","&","*","()","-","_","=","+","{","[","}",";",":","'","]","<",",",".",">","?"];
   
 
+  //Conditionals and Arrays Merge
 
-  //Creating random specs arrays
-  var random_lowerCase_array=[];
-  for(i=0;i<password_length;i++){
-    var random_lowerCase=Math.floor(Math.random()*lowerCase.length);
-    random_lowerCase_array.push(lowerCase[random_lowerCase]);
-  }
-  //console.log(random_lowerCase_array);
+  if(useLower && useUpper && useNumbers && useSymbols){
 
-  var random_upperCase_array=[];
-  for(i=0;i<password_length;i++){
-    var random_upperCase=Math.floor(Math.random()*upperCase.length);
-    random_upperCase_array.push(upperCase[random_upperCase]);
-  }
-  //console.log(random_upperCase_array);
+    var arrays_merge = lowerCase .concat (upperCase, numbers, symbols);
 
-  var random_numbers_array=[];
-  for(i=0;i<password_length;i++){
-    var random_numbers=Math.floor(Math.random()*numbers.length);
-    random_numbers_array.push(numbers[random_numbers]);
-  }
-  //console.log(random_numbers_array);
-
-  var random_symbols_array=[]
-  for(i=0;i<password_length;i++){
-    var random_symbols=Math.floor(Math.random()*symbols.length);
-    random_symbols_array.push(symbols[random_symbols]);
-  }
-  //console.log(random_symbols_array);  
-
-
-
-//Conditionals and Arrays Merge
-
-if(lowerCase_use && upperCase_use && numbers_use && symbols_use){
-
-  var arrays_merge = random_lowerCase_array .concat (random_upperCase_array, random_numbers_array, random_symbols_array);
-
-  console.log(arrays_merge);
+   // console.log(arrays_merge);
   
- }
+  }
 
-else if(lowerCase_use && upperCase_use && numbers_use){
+  else if(useLower && useUpper && useNumbers){
 
-  var arrays_merge = random_lowerCase_array .concat (random_upperCase_array, random_numbers_array);
+    var arrays_merge = lowerCase .concat (upperCase, numbers);
 
-  console.log(arrays_merge);
+   // console.log(arrays_merge);
 
-}
+  }
 
-else if(lowerCase_use && upperCase_use && symbols_use){
-  var arrays_merge = random_lowerCase_array .concat (random_upperCase_array, random_symbols_array);
+  else if(useLower && useUpper && useSymbols){
+    var arrays_merge = lowerCase .concat (upperCase, symbols);
 
-  console.log(arrays_merge);
-}
+   // console.log(arrays_merge);
+  }
 
-else if(lowerCase_use && numbers_use && symbols_use){
-  var arrays_merge = random_lowerCase_array .concat ( random_numbers_array, random_symbols_array);
+  else if(useLower && useNumbers && useSymbols){
+    var arrays_merge = lowerCase .concat ( numbers, symbols);
 
-  console.log(arrays_merge);
-}
+   // console.log(arrays_merge);
+  }
 
-else if(upperCase_use && numbers_use && symbols_use){
-  var arrays_merge = random_upperCase_array .concat (random_numbers_array, random_symbols_array);
+  else if(useUpper && useNumbers && useSymbols){
+    var arrays_merge = upperCase .concat (numbers, symbols);
 
-  console.log(arrays_merge);
-}
+   // console.log(arrays_merge);
+  }
 
-else if(lowerCase_use && upperCase_use){
-  var arrays_merge = random_lowerCase_array .concat (random_upperCase_array);
+  else if(useLower && useUpper){
+    var arrays_merge = lowerCase .concat (upperCase);
 
-  console.log(arrays_merge);
-}
+   // console.log(arrays_merge);
+  }
 
-else if(lowerCase_use && numbers_use){
-  var arrays_merge = random_lowerCase_array .concat (random_numbers_array);
+  else if(useLower && useNumbers){
+   var arrays_merge = lowerCase .concat (numbers);
 
-  console.log(arrays_merge);
-}
+   // console.log(arrays_merge);
+  }
 
-else if(lowerCase_use && symbols_use){
-  var arrays_merge = random_lowerCase_array .concat ( random_symbols_array);
+  else if(useLower && useSymbols){
+    var arrays_merge = lowerCase .concat ( symbols);
 
-  console.log(arrays_merge);
-}
+    //console.log(arrays_merge);
+  }
 
+  else if(useUpper && useNumbers ){
+    var arrays_merge = upperCase .concat (numbers);
 
-else if(upperCase_use && numbers_use ){
-  var arrays_merge = random_upperCase_array .concat (random_numbers_array);
+    //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useUpper && useSymbols){
+    var arrays_merge = upperCase.concat (symbols);
 
-else if(upperCase_use && symbols_use){
-  var arrays_merge = random_upperCase_array.concat (random_symbols_array);
+    //console.log(arrays_merge);
+  } 
 
-  console.log(arrays_merge);
-}
+  else if(useNumbers && useSymbols){
+    var arrays_merge = numbers .concat (symbols);
 
-else if(numbers_use && symbols_use){
-  var arrays_merge = random_numbers_array .concat (random_symbols_array);
+    //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useUpper && useSymbols){
+    var arrays_merge = upperCase.concat (symbols);
 
-else if(upperCase_use && symbols_use){
-  var arrays_merge = random_upperCase_array.concat (random_symbols_array);
+    // console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useLower){
+     var arrays_merge = lowerCase;
 
-else if(lowerCase_use){
-  var arrays_merge = random_lowerCase_array;
+    //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useUpper){
+      var arrays_merge = upperCase;
 
-else if(upperCase_use){
-  var arrays_merge = random_upperCase_array;
+     //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useNumbers){
+     var arrays_merge = numbers;
 
-else if(numbers_use){
-  var arrays_merge = random_numbers_array;
+    //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
+  else if(useSymbols){
+     var arrays_merge = symbols;
 
-else if(symbols_use){
-  var arrays_merge = random_symbols_array;
+    //console.log(arrays_merge);
+  }
 
-  console.log(arrays_merge);
-}
-
-else if(password_length==0 || password_length==null){
-  console.log("You din't choose the number of characters you want!")
-}
-
-else{
-  console.log("You didn't choose the characters you want!");
-}
+  else{
+    //console.log("Please answer the questions before procedure");
+  }
 
 
 
 
+  //Creating the password Array
+  var passwordArray=[];
+  for(i=0;i<passwordLength;i++){
+    var randomArray=Math.floor(Math.random()*arrays_merge.passworLength);
+    passwordArray.push(arrays_merge[randomArray]);
+  }
+  console.log(passwordArray);
+  
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
 
-}
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // // Get references to the #generate element
+// // var generateBtn = document.querySelector("#generate");
+
+// // // Write password to the #password input
+// // function writePassword() {
+// //   var password = generatePassword();
+// //   var passwordText = document.querySelector("#password");
+
+// //   passwordText.value = password;
+
+// // }
+
+// // // Add event listener to generate button
+// // generateBtn.addEventListener("click", writePassword);
 
 
 
