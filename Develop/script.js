@@ -90,45 +90,31 @@ function specs(){
   }
 
   //Creating the password Array
-    var passwordArray=[];
+    var password=[];
     for(i=0;i<passwordLength;i++){
     var randomX=Math.floor(Math.random()*arrays_merge.length);
-    passwordArray.push(arrays_merge[randomX]);
+    password.push(arrays_merge[randomX]);
     }
-    console.log(passwordArray);
+    
+    console.log(password);
  
-  
 
 
 
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
+  passwordText.value = password;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-// // // Get references to the #generate element
-// // var generateBtn = document.querySelector("#generate");
-
-// // // Write password to the #password input
-// // function writePassword() {
-// //   var password = generatePassword();
-// //   var passwordText = document.querySelector("#password");
-
-// //   passwordText.value = password;
-
-// // }
-
-// // // Add event listener to generate button
-// // generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 
 }
