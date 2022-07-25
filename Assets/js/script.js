@@ -94,7 +94,7 @@ function specs(){
 
   //convert array to spring::
  
-  var text = passwordArray.toString();
+  var text = passwordArray.join("");
   document.getElementById("password").innerHTML = text;
 
 }
