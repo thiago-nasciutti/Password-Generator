@@ -3,7 +3,11 @@
 Purpose
 A website that generates passwords based on these questions:
 
-1- How many characters? 2- Do you want to use lower case letters? 3- Do you want to use upper case letters? 4- Do you want to use numbers? 5- Do you want to use symbols?
+1- How many characters?
+2- Do you want to use lower case letters? 
+3- Do you want to use upper case letters?
+4- Do you want to use numbers? 
+5- Do you want to use symbols?
 
 Built With
 HTML
