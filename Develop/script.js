@@ -24,6 +24,7 @@ function specs(){
     var arrays_merge = lowerCase .concat (upperCase, numbers, symbols);
   }
 
+
   else if(useLower && useUpper && useNumbers){
     var arrays_merge = lowerCase .concat (upperCase, numbers);
   }
@@ -85,23 +86,18 @@ function specs(){
   }
 
   else{
-    var arrays_merge = "Please answer the questions befor procedure"
+    var arrays_merge = "Please answer the questions before procedure";
   }
 
-
-  
   //Creating the password Array
-  var passwordArray=[];
-  for(i=0;i<passwordLength;i++){
-    var randomArray=Math.floor(Math.random()*arrays_merge.passworLength);
-    passwordArray.push(arrays_merge[randomArray]);
-  }
-  console.log(passwordArray);
+    var passwordArray=[];
+    for(i=0;i<passwordLength;i++){
+    var randomX=Math.floor(Math.random()*arrays_merge.length);
+    passwordArray.push(arrays_merge[randomX]);
+    }
+    console.log(passwordArray);
+ 
   
-
-
-
-
 
 
 
@@ -133,25 +129,6 @@ function specs(){
 
 // // // Add event listener to generate button
 // // generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
