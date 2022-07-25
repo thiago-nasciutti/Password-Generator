@@ -83,7 +83,7 @@ function specs(){
     var arrays_merge = "Please answer the questions before procedure";
   }
 
-  //Creating the password Array
+  //Creating the password Array:
   var passwordArray=[];
   for(i=0;i<passwordLength;i++){
     var randomX=Math.floor(Math.random()*arrays_merge.length);
@@ -92,7 +92,7 @@ function specs(){
     
   console.log(passwordArray);
 
-  //convert array to spring
+  //convert array to spring::
  
   var text = passwordArray.toString();
   document.getElementById("password").innerHTML = text;
