@@ -14,7 +14,7 @@ HTML
 CSS
 JS
 Website
-https://thiago-nasciutti.github.io/friendly-parakeet/
+https://thiago-nasciutti.github.io/Password-Generator/
 
 Contribution
 Made with ❤️ by Thiago Borges Nasciutti<img width="872" alt="Screen Shot 2022-07-25 at 12 22 26 AM" src="https://user-images.githubusercontent.com/108194923/180699532-cbe3f04d-e814-4f68-9428-aa5cb8c1ee94.png">
